@@ -1,0 +1,33 @@
+# Site settings
+title: Jon Oliver
+tagline: "[ code, craft, create ]"
+email: jon@joliver.net
+description: "I like my code like I like my beer... well crafted."
+baseurl: ""
+url: "http://joliver.net"
+twitter_username: htmlephant
+github_username:  jonoliver
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+#
+# # Rake settings
+# post:
+#   template: _post.txt
+#   extension: md
+# page:
+#   template: _page.txt
+#   extension: md
+# editor: atom
+# git:
+#   branch: master
+# transfer:
+#   command: rsync
+#   settings: -av
+#   source: _site/
+#   destination: ~/Git/username.github.com/
