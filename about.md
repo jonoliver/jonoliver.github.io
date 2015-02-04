@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About"
-description: "I'm Jon, and I care about code craftsmanship."
+description: "I'm Jon, and I care about code."
 header-img: "img/about-bg.jpg"
 ---
 ###Great software doesn't just work, it makes life easier.
