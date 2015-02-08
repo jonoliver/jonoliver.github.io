@@ -1,0 +1,6 @@
+{% for items_hash in section.items %}
+  {% for items in items_hash %}
+    <h2>{{ items[0] }}</h2>
+    <p>{{ items[1] | join: ', ' }}</p>
+  {% endfor %}
+{% endfor %}

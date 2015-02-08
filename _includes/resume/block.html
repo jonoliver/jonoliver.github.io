@@ -1,0 +1,10 @@
+{% for item in section.items %}
+  <h2>{{ item.role }}</h2>
+  <h3>{{ item.org }}</h3>
+  <h4>{{ item.when }}</h4>
+  <ul>
+    {% for bullet in item.bullets %}
+    <li>{{ bullet }}</li>
+    {% endfor %}
+  </ul>
+{% endfor %}

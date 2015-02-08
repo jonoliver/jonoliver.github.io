@@ -1,0 +1,131 @@
+- name: Qualifications
+  layout: list
+  items:
+    - Experience developing and implementing user interfaces for enterprise applications, including administrative and navigation interfaces, AJAX functionality, form creation and validation
+    - Understanding of fundamental layout and UI/UX design principals
+    - Solid understanding of DOM, Browser Events, HTTP, XML and JSON
+    - Experience manipulating relational databases, SQL, ORM frameworks and stored procedures
+    - Design experience for both web and print in a professional environment
+    - Knowledge of web standards and accessibility
+    - Experience debugging applications using IDE and browser tools
+    - Experience working in a team environment using version control systems and Agile/Scrum methodology
+    - Ability and willingness to quickly learn new technologies
+    - Understanding of Object Oriented Programming principles and practices
+    - Extensive experience with MVC design patterns
+    - Understanding of web security practices and standards
+    - Knowledge of search engine optimization
+
+- name: Skills
+  layout: cloud
+  items:
+    - Languages:
+      - Ruby
+      - C#
+      - ASP.NET
+      - JavaScript
+      - HTML / XHTML
+      - CSS
+      - PHP
+      - T-SQL / MySQL
+      - XML / JSON
+
+    - Frameworks:
+      - Rails
+      - Sinatra
+      - Angular
+      - jQuery
+      - jQuery UI
+      - Ext.js
+      - Handlebars.js
+      - Haml
+      - Sass
+      - WordPress
+
+    - Software:
+      - Visual Studio 2010
+      - SQL Server 2008
+      - Team Foundation Server
+      - Git
+      - Adobe CS5
+      - Eclipse 3.6
+      - phpMyAdmin 2.6.2
+      - PageFlex Persona
+
+    - Operating Systems:
+
+      - Windows 7
+      - Windows Server 2008
+      - Mac OSX
+      - Ubuntu 10.10
+
+- name: Employment
+  layout: block
+  items:
+    - org:  Pomiet
+      role: Software Developer
+      location: Miamisburg, Oh
+      when: March 2014 - Current
+      bullets:
+        - Develop web applications
+
+    - org:  Workflow One
+      role: Web Developer
+      location: Dayton, Oh
+      when: March 2014 - Current
+      bullets:
+        - Develop e-commerce applications in a Windows development environment using Visual Studio,
+        - ASP.NET MVC, C# and SQL
+        - Create client facing and administrative interfaces using JavaScript, jQuery UI and Ext.js
+        - Collaborate with UI designers and business analysts to create intuitive user interfaces and improve client side interaction
+        - Build sites from wireframes and suggest usability improvements
+        - Manipulate relational databases and make schema modifications
+        - Develop AJAX functionality using JSON and XML
+        - Create and validate forms
+        - Work with clients and make suggestions on site functionality
+        - Debug client and server side application issues
+        - Create and modify site styles using CSS
+        - Collaborate with other developers in an Agile/Scrum environment
+        - Contribute changes to code base using Team Foundation Server
+        - Develop variable data items (brochures, direct mail items, business cards, etc) for print using PageFlex Persona, Adobe InDesign, Illustrator and PhotoShop and QuarkXPress in both a Mac and Windows environment
+        - Write JavaScript to format data according to client brand standards
+        - Create web form functionality and validation using JavaScript, HTML and CSS
+        - Prepare artwork for printer specifications
+        - Develop improvements for existing processes
+
+        - Develop variable data items (brochures, direct mail items, business cards, etc) for print using PageFlex Persona, Adobe InDesign, Illustrator and PhotoShop and QuarkXPress in both a Mac and Windows environment
+        - Write JavaScript to format data according to client brand standards
+        - Create web form functionality and validation using JavaScript, HTML and CSS
+        - Prepare artwork for printer specifications
+        - Develop improvements for existing processes
+        
+    - org:  Workflow One
+      role: Web Developer
+      location: Dayton, Oh
+      when: March 2014 - Current
+      bullets:
+
+    - org: The Berry Company
+      role: Graphic Designer
+      when: 2002-2007
+      bullets:
+        - Design print advertisements using Adobe Illustrator, PhotoShop and InDesign
+        - Create graphics for web applications and create web layouts using HTML and CSS
+        - Proof ads and make changes to art/copy
+        - Create graphics and prepare incoming art for directory/printer specifications
+        - Resolve artwork issues from printer
+
+- name: Education
+  layout: block
+  items:
+    - org: School of Advertising Art
+      role: Associate's Degree
+      role2: Applied Business in Advertising Art
+      location: Kettering, Oh
+      when: 2000 - 2002
+      bullets:
+        # Course of study included:
+        - Graphic Design
+        - Illustration
+        - Typography
+        - Web Design
+        - History of Advertising

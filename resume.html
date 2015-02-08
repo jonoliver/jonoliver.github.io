@@ -1,0 +1,11 @@
+---
+layout: page
+title: "Resume"
+---
+{% for section in site.data.resume %}
+  <section>
+    <h1>{{ section.name }}</h1>
+    {% capture section_layout %}resume/{{section.layout}}.html{% endcapture %}
+    {% include {{section_layout}} %}
+  </section>
+{% endfor %}
