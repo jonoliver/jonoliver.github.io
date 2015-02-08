@@ -1,0 +1,10 @@
+- Update Resume
+- Finish About
+- Update style
+- Move posts over
+- Move over posts.txt and page.txt templates for rake tasks
+- Write some real posts
+- Add email
+- Get rid of fake posts
+- Get rid of contact
+- Use Haml
