@@ -2,8 +2,15 @@
 layout: page
 title: "Resume"
 ---
+<div class="inner-page-nav">
+  <ul>
+    {% for section in site.data.resume %}
+      <li><a href="#{{ section.name | downcase }}">{{ section.name }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
 {% for section in site.data.resume %}
-  <section>
+  <section id="{{ section.name | downcase }}">
     <h1>{{ section.name }}</h1>
     {% capture section_layout %}resume/{{section.layout}}.html{% endcapture %}
     {% include {{section_layout}} %}
