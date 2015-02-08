@@ -1,19 +1,26 @@
+- name: Summary
+  layout: list
+  items:
+    - A motivated software developer with an emphasis on creating rich, intuitive user interfaces
+
 - name: Qualifications
   layout: list
   items:
-    - Experience developing and implementing user interfaces for enterprise applications, including administrative and navigation interfaces, AJAX functionality, form creation and validation
+    - 5+ years experience developing enterprise web applications
+    - 8+ years experience with client side web development
+    - Experience developing and implementing customer facing and adminstrative user interfaces
+    - Understanding of responsive web design and implementation
     - Understanding of fundamental layout and UI/UX design principals
-    - Solid understanding of DOM, Browser Events, HTTP, XML and JSON
+    - Solid understanding of DOM, Browser Events, HTTP and AJAX
     - Experience manipulating relational databases, SQL, ORM frameworks and stored procedures
-    - Design experience for both web and print in a professional environment
     - Knowledge of web standards and accessibility
     - Experience debugging applications using IDE and browser tools
-    - Experience working in a team environment using version control systems and Agile/Scrum methodology
-    - Ability and willingness to quickly learn new technologies
-    - Understanding of Object Oriented Programming principles and practices
-    - Extensive experience with MVC design patterns
+    - Experience working in a team environment using source control management and Agile/Scrum methodology
+    - Extensive experience with OOP and MVC principles and practices
+    - Knowledge of software design patterns
     - Understanding of web security practices and standards
-    - Knowledge of search engine optimization
+    - Design experience for both web and print
+    - Ability and willingness to quickly learn new technologies
 
 - name: Skills
   layout: cloud
@@ -25,9 +32,9 @@
       - JavaScript
       - HTML / XHTML
       - CSS
+      - SQL
       - PHP
-      - T-SQL / MySQL
-      - XML / JSON
+      - Bash
 
     - Frameworks:
       - Rails
@@ -35,83 +42,74 @@
       - Angular
       - jQuery
       - jQuery UI
-      - Ext.js
+      - CoffeeScript
       - Handlebars.js
-      - Haml
+      - Ext.js
       - Sass
+      - Bootstrap
+      - Haml
       - WordPress
 
-    - Software:
-      - Visual Studio 2010
-      - SQL Server 2008
-      - Team Foundation Server
-      - Git
+    - Applications:
       - Adobe CS5
-      - Eclipse 3.6
-      - phpMyAdmin 2.6.2
-      - PageFlex Persona
+      - iTerm
+      - Visual Studio 2010
+      - SQL Server
+      - IIS
 
     - Operating Systems:
-
-      - Windows 7
-      - Windows Server 2008
       - Mac OSX
-      - Ubuntu 10.10
+      - Linux (CentOS, Ubuntu)
+      - Windows
+
+    - Source Countrol:
+      - Git
+      - Team Foundation Server
+      - Subversion
 
 - name: Employment
   layout: block
   items:
-    - org:  Pomiet
+    - org:  Pomiet, LLC
       role: Software Developer
       location: Miamisburg, Oh
-      when: March 2014 - Current
+      when: 2014 - Present
       bullets:
-        - Develop web applications
+        - Develop web applications for healthcare and insurance providers
+        - Implement client and server side functionality using Ruby on Rails
+        - Collaborate with development team using Git and GitHub
+        - Work with Human Factors/UI Experts to create intuitive user interfaces
+        - Create and implement preliminary designs for web applications
+        - Provision and deploy to virtual linux servers
+
 
     - org:  Workflow One
       role: Web Developer
       location: Dayton, Oh
-      when: March 2014 - Current
+      when: 2007 - 2014
       bullets:
-        - Develop e-commerce applications in a Windows development environment using Visual Studio,
-        - ASP.NET MVC, C# and SQL
+        - Develop e-commerce and enterprise B2B web applications
+        - Implement client and server side functionality using Visual Studio, ASP.NET MVC, C# and SQL
         - Create client facing and administrative interfaces using JavaScript, jQuery UI and Ext.js
-        - Collaborate with UI designers and business analysts to create intuitive user interfaces and improve client side interaction
-        - Build sites from wireframes and suggest usability improvements
-        - Manipulate relational databases and make schema modifications
-        - Develop AJAX functionality using JSON and XML
+        - Develop web applications for creating variable print items (brochures, stationery, direct mail, etc)
+        - Collaborate with UI designers and business analysts to create intuitive user interfaces
+        - Implement wireframes and suggest usability improvements
+        - Develop AJAX functionality
         - Create and validate forms
-        - Work with clients and make suggestions on site functionality
+        - Manipulate relational databases and make schema modifications
         - Debug client and server side application issues
-        - Create and modify site styles using CSS
         - Collaborate with other developers in an Agile/Scrum environment
-        - Contribute changes to code base using Team Foundation Server
-        - Develop variable data items (brochures, direct mail items, business cards, etc) for print using PageFlex Persona, Adobe InDesign, Illustrator and PhotoShop and QuarkXPress in both a Mac and Windows environment
-        - Write JavaScript to format data according to client brand standards
-        - Create web form functionality and validation using JavaScript, HTML and CSS
-        - Prepare artwork for printer specifications
         - Develop improvements for existing processes
 
-        - Develop variable data items (brochures, direct mail items, business cards, etc) for print using PageFlex Persona, Adobe InDesign, Illustrator and PhotoShop and QuarkXPress in both a Mac and Windows environment
-        - Write JavaScript to format data according to client brand standards
-        - Create web form functionality and validation using JavaScript, HTML and CSS
-        - Prepare artwork for printer specifications
-        - Develop improvements for existing processes
-        
-    - org:  Workflow One
-      role: Web Developer
-      location: Dayton, Oh
-      when: March 2014 - Current
-      bullets:
 
     - org: The Berry Company
       role: Graphic Designer
       when: 2002-2007
       bullets:
-        - Design print advertisements using Adobe Illustrator, PhotoShop and InDesign
-        - Create graphics for web applications and create web layouts using HTML and CSS
+        - Design print advertisements
+        - Create graphics for print and web
         - Proof ads and make changes to art/copy
-        - Create graphics and prepare incoming art for directory/printer specifications
+        - Prepare incoming art for directory/printer specifications
         - Resolve artwork issues from printer
 
 - name: Education
