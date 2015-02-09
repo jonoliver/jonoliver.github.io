@@ -19,6 +19,6 @@ More excitingly, I've started a wonderful new job with the team at [Pomiet](http
 
 I can honestly say that the last few months have been the best of my career, and I get the feeling that the months to come will be even better.
 
-###Goodbye MicroSoft, hello open source.
+###Goodbye MicroSoft, hello open source
 - Transition from C# and asp.NET to Ruby on Rails
 - paradigm shift

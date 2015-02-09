@@ -11,7 +11,9 @@ layout: default
                     <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
                     <hr class="small">
                     <span class="subheading">{{ page.description }}</span>
-                    {% if page.header-social %}{% include social.html %}{% endif %}
+                    <div class="social">
+                      {% include social.html %}
+                    </div>
                 </div>
             </div>
         </div>

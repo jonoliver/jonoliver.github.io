@@ -169,7 +169,7 @@ hr.small {
 		padding: 100px 0 50px;
 		color: white;
 		@media only screen and (min-width: 768px) {
-			padding: 150px 0;
+			// padding: 150px 0;
 		}
 	}
 	.site-heading,
@@ -191,6 +191,9 @@ hr.small {
 			h1 {
 				font-size: 80px;
 			}
+		}
+		.social {
+			padding: 25px 0 0;
 		}
 	}
 	.post-heading {
