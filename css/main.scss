@@ -1,6 +1,25 @@
 ---
 ---
 
+@import 'base';
+
 .intro-header {
-  background: #000 !important;
+  background: $brand-primary !important;
+}
+
+.inner-page-nav {
+  text-align: center;
+
+  ul {
+    // display: flex;
+    list-style-type: none;
+    padding: 0;
+    li {
+      display: inline-block;
+
+    }
+  }
+  a {
+    padding: 20px;
+  }
 }
