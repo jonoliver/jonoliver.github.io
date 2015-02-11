@@ -1,26 +1,4 @@
 ---
-layout: null
 ---
 
-@import 'base';
-
-.intro-header {
-  background: $brand-primary !important;
-}
-
-.inner-page-nav {
-  text-align: center;
-
-  ul {
-    // display: flex;
-    list-style-type: none;
-    padding: 0;
-    li {
-      display: inline-block;
-
-    }
-  }
-  a {
-    padding: 20px;
-  }
-}
+@import 'wat';
