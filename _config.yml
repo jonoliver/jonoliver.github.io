@@ -16,14 +16,14 @@ permalink: pretty
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-#
-# # Rake settings
-# post:
-#   template: _post.txt
-#   extension: md
-# page:
-#   template: _page.txt
-#   extension: md
+
+# Rake settings
+post:
+  template: _post.txt
+  extension: md
+page:
+  template: _page.txt
+  extension: md
 # editor: atom
 # git:
 #   branch: master
