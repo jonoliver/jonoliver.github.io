@@ -11,7 +11,7 @@
     - Experience developing and implementing customer facing and adminstrative user interfaces
     - Understanding of responsive web design and implementation
     - Understanding of fundamental layout and UI/UX design principals
-    - Experience writing unit, integration and acceptance tests
+    - Experience with TDD, including unit, integration and acceptance tests
     - Understanding of DOM, Browser Events, HTTP and AJAX
     - Experience manipulating relational databases, SQL, ORM frameworks and stored procedures
     - Knowledge of web standards and accessibility
@@ -33,6 +33,7 @@
       - JavaScript
       - HTML / XHTML
       - CSS
+      - Node.js
       - SQL
       - PHP
       - Bash
