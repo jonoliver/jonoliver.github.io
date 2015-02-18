@@ -97,7 +97,7 @@ alias gp='git push'
 alias gf='git fetch'
 
 # merge changes
-alias gp='git push'
+alias gm='git merge'
 
 # check out a branch
 alias gco='git checkout'
