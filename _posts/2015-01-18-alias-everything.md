@@ -5,7 +5,7 @@ subtitle:   "Type less, do more"
 date:       2015-01-18 12:00:00
 author:     "Jon"
 ---
-*This post is part of an ongoing series based a talk I gave called [Command and Conquer]({% post_url 2015-01-15-command-and-conquer %}) for the [Dayton Web Developers](http://www.meetup.com/dayton-web-developers/events/219096888/) group.*
+*This post is part of an ongoing series based on a talk I gave called [Command and Conquer]({% post_url 2015-01-15-command-and-conquer %}) for the [Dayton Web Developers](http://www.meetup.com/dayton-web-developers/events/219096888/) group.*
 
 # Alias everything
 
