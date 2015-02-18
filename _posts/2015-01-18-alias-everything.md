@@ -28,7 +28,7 @@ We can also use aliases to set default flags and save ourselves a lot of typing.
 
 Now if I simply run ```l```, I get a long listing of the contents of my current directory, including hidden files, in a more readable format.
 
-#### Letters to the editor
+#### Letter to the editor
 As developers, we spend a lot of time editing files (when we're not [arguing about the best editor](https://xkcd.com/378/), that is). We can use an alias for that as well:
 
 <pre><code>alias edit='$EDITOR'
@@ -42,33 +42,69 @@ export EDITOR='atom'
 
 Now I can run ```edit``` to open my preferred editor inside my working directory, or ```edit file_name.txt``` to open a specific file.
 
-<!-- #### Other examples
-Hopefully you're beginning to see the usefulness of aliases. To see a lot more cool aliases, take a look at my [alias file](https://github.com/jonoliver/dotfiles/blob/master/custom/alias.zsh). For now, here are a few random favorites:
- -->
+#### Gittin' stuff done
+
+As good, decent, responsible developers, we're always sure to use [version control](http://git-scm.com/video/what-is-version-control) for our projects. I'm partial to [git](http://git-scm.com/), and my git aliases are a crucial part of my workflow. Here's a sample:
+<pre><code># initialize a repo
+alias gi='git init'
+
+# view the status
+alias gst='git status'
+
+# stage changes
+alias ga='git add'
+
+# unstage changes
+alias grh='git reset HEAD'
+
+# view unstaged changes
+alias gd='git diff'
+
+# view staged changes
+alias gdc='git diff --cached'
+
+# commit changes
+alias gc='git commit'
+
+# commit changes, with message
+alias gcm='git commit -m'
+
+# view list of commits (and make it look good!)
+glog='git log --oneline --decorate --color --graph'
+</code></pre>
+
+I find that since I've committed these aliases to muscle memory, not only am I *much* faster, but it has the added benefit of keeping me in my state of flow, allowing me to focus on the task at hand instead of fumbling around on the keyboard. Wins all around!
+
 
 #### Jogging your memory
 Aliases are great for productivity, but sometimes we may forget what the alias actually does behind the scenes. This is no good. We want our aliases to be *conveniences*, not *abstractions*. Luckily, we can use an alias to help us with this as well:
 
-<pre><code># search aliases for pattern
-alias ag='alias | grep'
+<pre><code>alias ag='alias | grep'
 </code></pre>
 
-This combines the power of the [vertical pipe](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-4.html) with the searching power of [grep](http://unixhelp.ed.ac.uk/CGI/man-cgi?grep). Now we can run something like ```ag git``` to give us a nice filtered list of all of our aliases that use git. Wonderful.
+This combines the power of the [vertical pipe](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-4.html) with the searching power of [grep](http://unixhelp.ed.ac.uk/CGI/man-cgi?grep). Now we can run something like ```ag git``` to give us a nice filtered list of all of our aliases that use git. But that's not all...
 
-<!-- <pre><code>
-# search processes for pattern
-alias psg='ps -ef | grep'
-# search history for pattern
-alias hg='history | grep'
-</code></pre> -->
+#### Send out the [search party](https://www.youtube.com/watch?v=UUNvFVQYClY)
+Although ```grep``` is most commonly used to search for patterns in files, using it to search against the output of different commands is extremely useful as well. Let's take a look at a few other aliases to leverage this technique.
 
+Want to search through a list of running processes?
+<pre><code>alias psg='ps -ef | grep'
+</code></pre>
 
-#### More goodness to come
-I'll be updating this posts with some more useful aliases, but it's creeping into the wee hours of the morning now, time to hit the sack. Until then, have a look at my complete [alias file](https://github.com/jonoliver/dotfiles/blob/master/custom/alias.zsh) over on GitHub. For now, I'll leave you with a few handy aliases for showing/hiding hidden files in the mac finder.
+How about searching your command history for the syntax of that command you ran months ago?
+<pre><code>alias hg='history | grep'
+</code></pre>
 
-<pre><code>
-# Mac finder
-# show hidden files in finder
+And that's just the beginning. Basically, if a command has output, you can ```grep``` it!
+
+#### Even more goodness
+If you're not already using aliases as part of your every day workflow, hopefully this has compelled you to start. For even more, have a look at my [alias file](https://github.com/jonoliver/dotfiles/blob/master/custom/alias.zsh) over on GitHub.
+
+And remember, this is just a starting point. Feel free to use any of the aliases here (most of them are "borrowed" anyway), but more importantly, create your own! **Make your aliases work for you.**
+
+Ok, that's all for now. I'll leave you with a few handy aliases for displaying hidden files in the mac finder.
+
+<pre><code># show hidden files in finder
 alias sf="defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder"
 
 # hide hidden files in finder
