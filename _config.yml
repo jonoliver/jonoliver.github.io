@@ -8,7 +8,7 @@ baseurl: ""
 url: "http://joliver.net"
 twitter_username: htmlephant
 github_username:  jonoliver
-
+gems: [jekyll-paginate]
 # Build settings
 markdown: kramdown
 highlighter: pygments
