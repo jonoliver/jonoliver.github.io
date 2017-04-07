@@ -4,7 +4,26 @@
 @import 'base';
 
 .intro-header {
-  background: $brand-primary !important;
+  // background: $brand-primary !important;
+  background: none;
+  background-size: cover;
+  background-position-y: bottom;
+
+  @media screen and (max-width: 480px) {
+    background-position-x: right;
+  }
+}
+
+.site-heading {
+  text-shadow: rgba(132, 132, 132, 0.24) 1px 1px 0px;
+
+  .fa-stack {
+    color: rgba(28, 41, 15, 0.71);
+
+    &:hover {
+      color: rgb(28, 41, 15);
+    }
+  }
 }
 
 .inner-page-nav {
