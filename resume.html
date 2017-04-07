@@ -12,7 +12,8 @@ description: "Software Developer"
 </div>
 {% for section in site.data.resume %}
   <section id="{{ section.name | downcase }}">
-    <h1>{{ section.name }}</h1>
+    <img class='icon' src="/img/resume/{{section.icon}}.svg" alt="section.icon">
+    <h2>{{ section.name }}</h2>
     {% capture section_layout %}resume/{{section.layout}}.html{% endcapture %}
     {% include {{section_layout}} %}
   </section>

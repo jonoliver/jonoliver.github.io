@@ -1,9 +1,11 @@
 - name: Summary
+  icon: person
   layout: list
   items:
-    - A full-stack software developer with an emphasis on creating rich, intuitive user interfaces
+    - A full-stack software developer with a focus on building responsive, intuitive web applications
 
 - name: Qualifications
+  icon: lightbulb
   layout: list
   items:
     - 5+ years experience developing enterprise web applications
@@ -24,6 +26,7 @@
     - Ability and willingness to quickly learn new technologies
 
 - name: Skills
+  icon: code
   layout: cloud
   items:
     - Languages:
@@ -71,6 +74,7 @@
       - Subversion
 
 - name: Employment
+  icon: briefcase
   layout: block
   items:
     - org:  Pomiet, LLC
@@ -116,6 +120,7 @@
         - Resolve artwork issues from printer
 
 - name: Education
+  icon: university
   layout: block
   items:
     - org: School of Advertising Art
