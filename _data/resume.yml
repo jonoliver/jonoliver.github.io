@@ -2,28 +2,35 @@
   icon: person
   layout: list
   items:
-    - A full-stack software developer with a focus on building responsive, intuitive web applications
+    - A full-stack software developer focused on building responsive, intuitive web applications
 
 - name: Qualifications
   icon: lightbulb
   layout: list
   items:
-    - 5+ years experience developing enterprise web applications
-    - 8+ years experience with client side web development
-    - Experience developing and implementing customer facing and adminstrative user interfaces
-    - Understanding of responsive web design and implementation
-    - Understanding of fundamental layout and UI/UX design principals
-    - Experience with TDD, including unit, integration and acceptance tests
-    - Understanding of DOM, Browser Events, HTTP and AJAX
-    - Experience manipulating relational databases, SQL, ORM frameworks and stored procedures
-    - Knowledge of web standards and accessibility
-    - Experience debugging applications using IDE and browser tools
-    - Experience working in a team environment using source control management and Agile/Scrum methodology
-    - Extensive experience with OOP and MVC principles and practices
-    - Knowledge of software design patterns
-    - Understanding of web security practices and standards
-    - Design experience for both web and print
-    - Ability and willingness to quickly learn new technologies
+    - Experience in all aspects of the software development process including design, implementation, release and maintenance
+    - Extensive development experience on both Lixux and Windows platforms
+    - Experience working in a team enviroment as both a lead and supporting developer
+    - Experience with modern development practices including TDD and Agile?
+    #SOLID principals and design patterns
+    - Experience with build automation, server provisioning and deployment
+    - Experience building responsive web applications
+    # - 5+ years experience developing enterprise web applications
+    # - 8+ years experience with client side web development
+    # - Experience developing and implementing customer facing and adminstrative user interfaces
+    # - Understanding of responsive web design and implementation
+    # - Understanding of fundamental layout and UI/UX design principals
+    # - Experience with TDD, including unit, integration and acceptance tests
+    # - Understanding of DOM, Browser Events, HTTP and AJAX
+    # - Experience manipulating relational databases, SQL, ORM frameworks and stored procedures
+    # - Knowledge of web standards and accessibility
+    # - Experience debugging applications using IDE and browser tools
+    # - Experience working in a team environment using source control management and Agile/Scrum methodology
+    # - Extensive experience with OOP and MVC principles and practices
+    # - Knowledge of software design patterns
+    # - Understanding of web security practices and standards
+    # - Design experience for both web and print
+    # - Ability and willingness to quickly learn new technologies
 
 - name: Skills
   icon: code
@@ -82,12 +89,14 @@
       location: Miamisburg, Oh
       when: 2014 - Present
       bullets:
+        - 
         - Develop web applications for healthcare and insurance providers
         - Implement client and server side functionality using Ruby on Rails
         - Collaborate with development team using Git and GitHub
         - Work with Human Factors/UI Experts to create intuitive user interfaces
         - Create and implement preliminary designs for web applications
         - Provision and deploy to virtual linux servers
+      tools: Ruby, Rails, Sinatra, Node.js, Meteor, MySQL, MongoDB, Passenger, NGINX, Git
 
 
     - org:  Workflow One
@@ -107,7 +116,7 @@
         - Debug client and server side application issues
         - Collaborate with other developers in an Agile/Scrum environment
         - Develop improvements for existing processes
-
+      tools: C#, ASP.NET MVC, Angular, Ext JS, TSQL, IIS, TFS
 
     - org: The Berry Company
       role: Graphic Designer
@@ -118,6 +127,7 @@
         - Proof ads and make changes to art/copy
         - Prepare incoming art for directory/printer specifications
         - Resolve artwork issues from printer
+      tools: Adobe Illustrator, Adobe Photoshop
 
 - name: Education
   icon: university
