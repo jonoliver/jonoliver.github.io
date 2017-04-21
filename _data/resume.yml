@@ -8,13 +8,15 @@
   icon: lightbulb
   layout: list
   items:
-    - Experience in all aspects of the software development process including design, implementation, release and maintenance
-    - Extensive development experience on both Lixux and Windows platforms
-    - Experience working in a team enviroment as both a lead and supporting developer
-    - Experience with modern development practices including TDD and Agile?
-    #SOLID principals and design patterns
+    - Experience in all aspects of the software development process including design, implementation, deployment and maintenance
+    - Extensive development experience in both Lixux and Windows environments
+    - Experience working in a collaborative team enviroment as both a lead and supporting developer
+    - Experience with Test Driven Development and Continuous Integration
+    - Experience working in an Agile/Scrum
     - Experience with build automation, server provisioning and deployment
     - Experience building responsive web applications
+    - Knowledge of software design patterns and SOLID principals
+    - Understanding of web security practices and standards
     # - 5+ years experience developing enterprise web applications
     # - 8+ years experience with client side web development
     # - Experience developing and implementing customer facing and adminstrative user interfaces
@@ -89,15 +91,14 @@
       location: Miamisburg, Oh
       when: 2014 - Present
       bullets:
-        - 
         - Develop web applications for healthcare and insurance providers
         - Implement client and server side functionality using Ruby on Rails
-        - Collaborate with development team using Git and GitHub
-        - Work with Human Factors/UI Experts to create intuitive user interfaces
+        - Work with UI/UX designers to create intuitive user interfaces
         - Create and implement preliminary designs for web applications
         - Provision and deploy to virtual linux servers
-      tools: Ruby, Rails, Sinatra, Node.js, Meteor, MySQL, MongoDB, Passenger, NGINX, Git
-
+        - Integrate new applications with existing systems
+        - Collaborate with development team using Git and GitHub
+      tools: Ruby, Rails, Sinatra, Node.js, Meteor, MySQL, MongoDB, TeamCity, Passenger, NGINX, Git
 
     - org:  Workflow One
       role: Web Developer
