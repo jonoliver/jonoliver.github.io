@@ -3,16 +3,30 @@ layout: page
 title: "Jon Oliver"
 description: "Software Developer"
 ---
+<!-- <div class="icons">
+  <i class="icon fa fa-user" aria-hidden="true"></i>
+  <i class="icon fa fa-star" aria-hidden="true"></i>
+  <i class="icon fa fa-flask" aria-hidden="true"></i>
+  <i class="icon fa fa-bolt" aria-hidden="true"></i>
+  <i class="icon fa fa-lightbulb-o" aria-hidden="true"></i>
+  <i class="icon fa fa-check" aria-hidden="true"></i>
+  <i class="icon fa fa-rocket" aria-hidden="true"></i>
+  <i class="icon fa fa-briefcase" aria-hidden="true"></i>
+  <i class="icon fa fa-code" aria-hidden="true"></i>
+  <i class="icon fa fa-graduation-cap" aria-hidden="true"></i>
+  <i class="icon fa fa-wrench" aria-hidden="true"></i>
+</div>
 <div class="inner-page-nav">
   <ul>
     {% for section in site.data.resume %}
       <li><a href="#{{ section.name | downcase }}">{{ section.name }}</a></li>
     {% endfor %}
   </ul>
-</div>
+</div> -->
 {% for section in site.data.resume %}
   <section id="{{ section.name | downcase }}">
-    <img class='icon' src="/img/resume/{{section.icon}}.svg" alt="section.icon">
+    <i class="icon fa fa-{{section.icon}}" aria-hidden="true"></i>
+    <!-- <img class='icon' src="/img/resume/{{section.icon}}.svg" alt="section.icon"> -->
     <h2>{{ section.name }}</h2>
     {% capture section_layout %}resume/{{section.layout}}.html{% endcapture %}
     {% include {{section_layout}} %}

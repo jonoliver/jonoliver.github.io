@@ -1,10 +1,10 @@
 - name: Summary
-  icon: person
+  icon: star
   layout: blurb
   content: A full-stack software developer focused on building responsive, intuitive web applications
 
 - name: Qualifications
-  icon: lightbulb
+  icon: rocket
   layout: list
   items:
     - Experience in all aspects of the software development process including design, implementation, deployment and maintenance
@@ -34,7 +34,7 @@
     # - Ability and willingness to quickly learn new technologies
 
 - name: Skills
-  icon: code
+  icon: flask
   layout: cloud
   items:
     - Languages:
@@ -130,7 +130,7 @@
       tools: Adobe Illustrator, Adobe Photoshop
 
 - name: Education
-  icon: university
+  icon: graduation-cap
   layout: block
   items:
     - org: School of Advertising Art
