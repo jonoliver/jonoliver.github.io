@@ -1,8 +1,7 @@
 - name: Summary
   icon: person
-  layout: list
-  items:
-    - A full-stack software developer focused on building responsive, intuitive web applications
+  layout: blurb
+  content: A full-stack software developer focused on building responsive, intuitive web applications
 
 - name: Qualifications
   icon: lightbulb
