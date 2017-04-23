@@ -24,17 +24,45 @@
   }
 }
 
-.icon {
-  float: left;
-  margin-right: 9px;
-  color: #FFF;
-  background: $gray-dark;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 20px;
-  padding-top: 8px;
+#resume {
+  // potential combinations
+  // #6f8284 #646e73 #527d80 #a6b0b5
+  $header-color: $brand-primary;
+  .icon {
+    float: left;
+    margin-right: 9px;
+    color: #FFF;
+    background: $header-color;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 8px;
+  }
+  h2 {
+    color: $header-color;
+  }
+  h3, h4, h5, h6 {
+    color: #646e73;
+  }
+  p {
+    margin: 0;
+  }
+  ul {
+    padding-left: 0;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 500px){
+  #resume {
+    margin-left: 45px;
+    .icon {
+      position: absolute;
+      left: 15px;
+    }
+  }
 }
 
 .copyleft {
