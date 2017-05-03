@@ -2,9 +2,7 @@
   <h3>{{ item.role }}</h3>
   <h4>{{ item.org }}</h4>
   <h5>{{ item.when }}</h5>
-  <ul>
-    {% for bullet in item.bullets %}
-    <li>{{ bullet }}</li>
-    {% endfor %}
-  </ul>
+  {% for bullet in item.bullets %}
+  <p>{{ bullet }}</p>
+  {% endfor %}
 {% endfor %}
