@@ -55,7 +55,7 @@
       when: 2014 - Present
       bullets:
         - "As a Developer, I work with clients to build intuitive web applications to help customers enroll in health insurance plans, process enrollments, and integrate with internal/external systems. Duties include: Collaborate with Project Manager, UX Designers and QA Testers to plan, build and deploy application features. Implement client and server side web functionality. Write unit, integration and user acceptance tests."
-        - "As a Technical Lead, I lead a development team and act as technical liaison between the team and clients. Duties include: Automate build/test/deployment processes, implement analytics and reporting, deliver feature estimates, perform code reviews"
+        - "As a Technical Lead, I lead a development team and act as technical liaison between the team and clients. Duties include: Automate build/test/deployment processes, implement analytics and reporting, deliver feature estimates, perform code reviews."
       tools: Ruby, Rails, Sinatra, Node.js, Meteor, MySQL, MongoDB, TeamCity, Passenger, NGINX, Git
 
     - org:  Workflow One
@@ -83,4 +83,4 @@
       location: Kettering, Oh
       when: 2000 - 2002
       bullets:
-        - "Course of study included: Graphic Design, Illustration, Typography, Web Design, Animation"
+        - "Course of study included: Graphic Design, Illustration, Typography, Web Design, Animation."
