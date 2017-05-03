@@ -3,17 +3,17 @@ layout: page
 title: "Jon Oliver"
 description: "Software Developer"
 ---
-<div class="inner-page-nav">
-  <ul>
-    {% for section in site.data.resume %}
-      <li><a href="#{{ section.name | downcase }}">{{ section.name }}</a></li>
-    {% endfor %}
-  </ul>
+<div id='download'>
+  <a href="/assets/jon_oliver_resume.pdf"><i class="fa fa-download" aria-hidden="true"></i> PDF version</a>
 </div>
+<div id="resume">
 {% for section in site.data.resume %}
   <section id="{{ section.name | downcase }}">
-    <h1>{{ section.name }}</h1>
+    <i class="icon fa fa-{{section.icon}}" aria-hidden="true"></i>
+    <h2>{{ section.name }}</h2>
     {% capture section_layout %}resume/{{section.layout}}.html{% endcapture %}
     {% include {{section_layout}} %}
   </section>
+  <hr>
 {% endfor %}
+</div>
