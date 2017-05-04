@@ -4,8 +4,10 @@
 @import 'base';
 
 .intro-header {
-  background: $brand-primary !important;
+  // background: $brand-primary !important;
+  background-size: cover;
   margin-bottom: 20px;
+  height: 100vh;
 }
 
 .inner-page-nav {
