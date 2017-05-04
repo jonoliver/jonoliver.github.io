@@ -5,9 +5,26 @@
 
 .intro-header {
   // background: $brand-primary !important;
+  background-color: #353436;
   background-size: cover;
   margin-bottom: 20px;
   height: 100vh;
+
+  .site-heading {
+    position: relative;
+    animation: fadein 1s;
+    animation-timing-function: ease-out;
+  }
+  @keyframes fadein {
+    from {
+      top: 50px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
 }
 
 .inner-page-nav {
