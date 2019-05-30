@@ -1,0 +1,70 @@
+body {
+  background: #3C3C59;
+  color: white;
+  font-family: 'Questrial', sans-serif;
+  text-align: center;
+}
+
+/* BEM? Where we're going, we don't need BEM... */
+h1 {
+  font-family: 'Coda Caption', sans-serif;
+}
+
+p {
+  font-size: 1rem;
+}
+
+section {
+  margin: auto;
+}
+
+@media(min-width: 400px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  section {
+    width: 300px;
+    margin: 0;
+  }
+}
+
+#change-fancy-title {
+  background: none;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px;
+  font-family: 'Questrial', sans-serif;
+}
+
+#change-fancy-title:hover {
+  color: #E4F4E5;
+}
+
+.radiation {
+  animation: radiation 0.8s infinite;
+}
+
+.radiation.medium {
+  animation-delay: 0.1s;
+}
+.radiation.large {
+  animation-delay: 0.2s;
+}
+
+@keyframes radiation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
