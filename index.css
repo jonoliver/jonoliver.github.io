@@ -1,17 +1,32 @@
 body {
   background: #3C3C59;
   color: white;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
+  perspective: 800px;
 }
 
 /* BEM? Where we're going, we don't need BEM... */
 h1 {
-  font-family: 'Coda Caption', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+h1 span {
+  color: #ffd9a5;
+  padding-left: 0.1em;
+  font-style: italic;
+}
+
+h2, h3 {
+  margin: 0.2rem 0;
 }
 
 p {
   font-size: 1rem;
+  margin-bottom: 0;
 }
 
 section {
@@ -23,11 +38,32 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
   }
   section {
-    width: 300px;
+    width: 30%;
+    min-width: 300px;
     margin: 0;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  p, #change-fancy-title {
+    font-size: 20px;
+  }
+}
+
+@media(min-width: 800px) {
+  h1 {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 3vw;
+  }
+  p, #change-fancy-title {
+    font-size: 2vw;
   }
 }
 
@@ -36,14 +72,15 @@ section {
   border: none;
   color: white;
   text-decoration: underline;
-  font-size: 1rem;
   cursor: pointer;
-  padding: 10px;
+  padding: 15px;
   font-family: 'Questrial', sans-serif;
+  color: #E4F4E5;
+  margin-top: 1vw;
 }
 
 #change-fancy-title:hover {
-  color: #E4F4E5;
+  color: #ffd9a5;
 }
 
 .radiation {
@@ -66,5 +103,28 @@ section {
   }
   100% {
     opacity: 0;
+  }
+}
+
+#spaceman {
+  transform-style: preserve-3d;
+  animation: float 7s infinite cubic-bezier(0.42, 0.43, 0.46, 0.67);
+}
+
+@keyframes float {
+  0% {
+    transform: rotateX(-4deg) rotateY(0deg) rotateZ(0deg) translateZ(-100px);
+  }
+  25% {
+    transform: rotateX(0deg) rotateY(-8deg) rotateZ(-1deg) translateZ(-100px);
+  }
+  50% {
+    transform: rotateX(4deg) rotateY(0deg) rotateZ(0deg) translateZ(-100px);
+  }
+  75% {
+    transform: rotateX(0deg) rotateY(4deg) rotateZ(1deg) translateZ(-100px);
+  }
+  100% {
+    transform: rotateX(-4deg) rotateY(0deg) rotateZ(0deg) translateZ(-100px);
   }
 }

@@ -20,6 +20,7 @@
     "Back End",
     "Agile",
     "Imagination",
+    "Digital",
   ];
 
   const titles = [
@@ -27,17 +28,14 @@
     "Ninja",
     "Rockstar",
     "Jedi",
-    "Pirate",
     "Wizard",
     "Warlock",
-    "Zombie",
     "Visionary",
-    "Demigod",
     "Hacker",
     "Pioneer",
     "Evangelist",
     "Engineer",
-    "Astronaut"
+    "Astronaut",
   ];
 
   function random(arr) {
@@ -55,6 +53,22 @@
     const article = /^[AEIOU]/i.test(title) ? "an" : "a";
     $("#fancy-title").innerText = title;
     $('#fancy-article').innerText = article;
+  });
+
+  const proportion = (a,b,c) => a*b/c;
+
+  document.addEventListener('mousemove', ({x, y}) => {
+    const container = $('#spaceman');
+    const relativeX = (container.offsetWidth + container.offsetLeft) / 2;
+    const relativeY = (container.offsetHeight + container.offsetTop) / 2;
+
+    $('#neck').style.transform = `translateY(${y * -0.01}px)`;
+
+    x = proportion(relativeX - x, 20, container.offsetWidth);
+    y = proportion(relativeY - y, 20, container.offsetHeight);
+
+    $('#facemask').style.transform = `translateX(${x * -0.5}px) translateY(${y * -0.5}px)`;
+    $('svg').style.transform = `rotateX(${y * 0.5}deg) rotateY(${x * -1}deg) rotateZ(${x * 0.2}deg) translateZ(-100px) scale(1.2)`;
   });
 
   // This comment is stale, don't read it
