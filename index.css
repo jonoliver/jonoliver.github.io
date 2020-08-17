@@ -2,8 +2,8 @@ body {
   background: #3C3C59;
   color: white;
   font-family: 'Raleway', sans-serif;
-  text-align: center;
   perspective: 800px;
+  margin: 0;
 }
 
 /* BEM? Where we're going, we don't need BEM... */
@@ -33,13 +33,23 @@ section {
   margin: auto;
 }
 
+.hero {
+  text-align: center;
+}
+
+.about {
+  /* text-align: left; */
+  margin: 5rem auto;
+  width: 90%;
+}
+
 @media(min-width: 400px) {
-  main {
+  .hero {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  section {
+  .hero section {
     width: 30%;
     min-width: 300px;
     margin: 0;
@@ -50,37 +60,43 @@ section {
   h2 {
     font-size: 26px;
   }
-  p, #change-fancy-title {
+  p, button {
     font-size: 20px;
   }
 }
 
 @media(min-width: 800px) {
+  .about {
+    width: 60%;
+  }
   h1 {
     font-size: 4vw;
   }
   h2 {
     font-size: 3vw;
   }
-  p, #change-fancy-title {
+  p, button {
     font-size: 2vw;
   }
 }
 
-#change-fancy-title {
+a, button {
   background: none;
   border: none;
   color: white;
   text-decoration: underline;
   cursor: pointer;
-  padding: 15px;
-  font-family: 'Questrial', sans-serif;
   color: #E4F4E5;
-  margin-top: 1vw;
 }
 
-#change-fancy-title:hover {
+a:hover, button:hover {
   color: #ffd9a5;
+}
+
+button {
+  padding: 15px;
+  margin-top: 1vw;
+  font-family: 'Questrial', sans-serif;
 }
 
 .radiation {
