@@ -1,5 +1,6 @@
 body {
-  background: #3C3C59;
+  /* background: #3C3C59; */
+  background: linear-gradient(-21deg, #3c3c59, #232332);
   color: white;
   font-family: 'Raleway', sans-serif;
   perspective: 800px;
@@ -143,4 +144,25 @@ button {
   100% {
     transform: rotateX(-4deg) rotateY(0deg) rotateZ(0deg) translateZ(-100px);
   }
+}
+
+.socially-distant-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socially-distant-media a {
+  display: block;
+  width: 3rem;
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.socially-distant-media svg {
+  fill: #E4F4E5;
+}
+
+.socially-distant-media a:hover svg {
+  fill: #ffd9a5;
 }
