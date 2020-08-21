@@ -1,5 +1,4 @@
 body {
-  /* background: #3C3C59; */
   background: linear-gradient(-21deg, #3c3c59, #232332);
   color: white;
   font-family: 'Raleway', sans-serif;
@@ -7,7 +6,7 @@ body {
   margin: 0;
 }
 
-/* BEM? Where we're going, we don't need BEM... */
+/* BEM? Where we're going, we don't need BEM... 🔥🔥*/
 h1 {
   font-family: 'Kanit', sans-serif;
   font-size: 2.6rem;
@@ -25,9 +24,14 @@ h2, h3 {
   margin: 0.2rem 0;
 }
 
-p {
+button {
   font-size: 1rem;
-  margin-bottom: 0;
+}
+
+p {
+  line-height: 1.5rem;
+  margin: 0 auto;
+  width: 80vw;
 }
 
 section {
@@ -36,49 +40,62 @@ section {
 
 .hero {
   text-align: center;
+  height: 80vh;
 }
 
-.about {
-  /* text-align: left; */
-  margin: 5rem auto;
-  width: 90%;
+#spaceman svg {
+  max-height: 50vh;
 }
 
-@media(min-width: 400px) {
+@media(orientation: landscape) {
   .hero {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .hero section {
-    width: 30%;
-    min-width: 300px;
-    margin: 0;
-  }
-  h1 {
-    font-size: 32px;
-  }
-  h2 {
-    font-size: 26px;
-  }
-  p, button {
-    font-size: 20px;
+    width: 50%;
   }
 }
 
-@media(min-width: 800px) {
-  .about {
-    width: 60%;
-  }
+@media (orientation: landscape) and (min-width: 600px) {
   h1 {
-    font-size: 4vw;
+    font-size: 6vw;
   }
   h2 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
-  p, button {
-    font-size: 2vw;
+  button, p {
+    font-size: 2.5vw;
+    line-height: 3vw;
   }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  h1 {
+    font-size: 10vw;
+  }
+  h2 {
+    font-size: 6vw;
+  }
+  button, p {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+}
+
+@media (orientation: portrait) and (max-height: 560px) {
+  .hero {
+    height: initial;
+  }
+}
+
+.about {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 a, button {
@@ -149,14 +166,20 @@ button {
 .socially-distant-media {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  height: 20vh;
 }
 
 .socially-distant-media a {
   display: block;
-  width: 3rem;
+  width: 2.2rem;
   cursor: pointer;
-  padding: 2rem;
+}
+
+@media (min-width: 900px) {
+  .socially-distant-media a {
+    width: 4vw;
+  }
 }
 
 .socially-distant-media svg {
