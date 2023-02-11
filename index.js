@@ -17,10 +17,7 @@
     "Web",
     "Full Stack",
     "Front End",
-    "Back End",
-    "Agile",
-    "Imagination",
-    "Digital",
+    "Technical",
   ];
 
   const titles = [
@@ -30,10 +27,7 @@
     "Jedi",
     "Wizard",
     "Warlock",
-    "Visionary",
     "Hacker",
-    "Pioneer",
-    "Evangelist",
     "Engineer",
     "Astronaut",
   ];
