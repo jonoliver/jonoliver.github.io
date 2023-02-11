@@ -58,6 +58,9 @@
   const proportion = (a,b,c) => a*b/c;
 
   document.addEventListener('mousemove', ({x, y}) => {
+    // don't move the spaceman on tap, only hover
+    if (window.matchMedia("(any-hover: none)").matches) return;
+
     const container = $('#spaceman');
     const relativeX = (container.offsetWidth + container.offsetLeft) / 2;
     const relativeY = (container.offsetHeight + container.offsetTop) / 2;
