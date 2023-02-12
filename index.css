@@ -4,6 +4,14 @@ body {
   font-family: 'Raleway', sans-serif;
   perspective: 800px;
   margin: 0;
+  display: grid;
+  /* grid-template-rows: 45vh 45vh 10vh 90vh; */
+  grid-template:
+    "image" 45vh
+    "header" 45vh
+    "nav" 10vh
+    "about" 90vh;
+  /* grid-template:"image header" "nav nav" "about about"; */
 }
 
 /* BEM? Where we're going, we don't need BEM... 🔥🔥*/
@@ -31,35 +39,51 @@ button {
 p {
   line-height: 1.5rem;
   margin: 0 auto;
-  width: 80vw;
+  width: 90vw;
 }
 
 section {
+  grid-area: image;
   margin: auto;
 }
 
-.hero {
+header {
+  grid-area: header;
+  margin: auto;
   text-align: center;
-  height: 80vh;
 }
 
 #spaceman svg {
-  max-height: 50vh;
+  height: 50vh;
 }
 
 @media(orientation: landscape) {
-  .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  body {
+    grid-template:
+      "image header" 80vh
+      "nav nav" 20vh
+      "about about" 80vh;
+  }
+  #spaceman svg {
+    height: 40vw;
   }
 
-  .hero section {
-    width: 50%;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 6vw;
+  }
+  h2 {
+    font-size: 3.5vw;
+  }
+  button, p {
+    font-size: 2.5vw;
+    line-height: 3vw;
   }
 }
 
-@media (orientation: landscape) and (min-width: 600px) {
+/* @media (orientation: landscape) and (min-width: 600px) {
   h1 {
     font-size: 6vw;
   }
@@ -83,19 +107,12 @@ section {
     font-size: 4vw;
     line-height: 5vw;
   }
-}
-
-@media (orientation: portrait) and (max-height: 560px) {
-  .hero {
-    height: initial;
-  }
-}
+} */
 
 .about {
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  grid-area: about;
+  display: grid;
+  align-items: center;
 }
 
 a, button {
@@ -164,14 +181,16 @@ button {
 }
 
 .socially-distant-media {
-  display: flex;
+  grid-area: nav;
+  display: grid;
   align-items: center;
   justify-content: space-evenly;
-  height: 20vh;
+  grid-template-columns: repeat(5, 20vw);
 }
 
 .socially-distant-media a {
   display: block;
+  margin: auto;
   width: 2.2rem;
   cursor: pointer;
 }
