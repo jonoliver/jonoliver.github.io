@@ -1,23 +1,23 @@
-body {
+html, body {
   background: linear-gradient(-21deg, #3c3c59, #232332);
+  margin: 0;
+}
+body {
   color: white;
   font-family: 'Raleway', sans-serif;
   perspective: 800px;
-  margin: 0;
   display: grid;
-  /* grid-template-rows: 45vh 45vh 10vh 90vh; */
   grid-template:
     "image" 45vh
     "header" 45vh
     "nav" 10vh
     "about" 90vh;
-  /* grid-template:"image header" "nav nav" "about about"; */
 }
 
 /* BEM? Where we're going, we don't need BEM... 🔥🔥*/
 h1 {
   font-family: 'Kanit', sans-serif;
-  font-size: 2.6rem;
+  font-size: clamp(2.6rem, 7vh, 20rem);
   text-transform: uppercase;
   margin: 1rem 0;
 }
@@ -29,15 +29,17 @@ h1 span {
 }
 
 h2, h3 {
+  font-size: clamp(1.8rem, 4vh, 10rem);
   margin: 0.2rem 0;
 }
 
 button {
-  font-size: 1rem;
+  font-size: clamp(1rem, 2.6vh, 7rem);
 }
 
 p {
-  line-height: 1.5rem;
+  font-size: clamp(1rem, 2.4vh, 7rem);
+  line-height: clamp(1.5rem, 3.8vh, 8rem);
   margin: 0 auto;
   width: 90vw;
 }
@@ -67,47 +69,16 @@ header {
   #spaceman svg {
     height: 40vw;
   }
-
 }
 
-@media (min-width: 600px) {
-  h1 {
-    font-size: 6vw;
-  }
-  h2 {
-    font-size: 3.5vw;
-  }
-  button, p {
-    font-size: 2.5vw;
-    line-height: 3vw;
+@media(min-width: 1000px) {
+  p {
+    /* font-size: clamp(1rem, 2vw, 7rem);
+    line-height: clamp(1.5rem, 3vw, 8rem); */
+    font-size: clamp(1rem, 3vh, 7rem);
+    line-height: clamp(1.5rem, 4vh, 8rem);
   }
 }
-
-/* @media (orientation: landscape) and (min-width: 600px) {
-  h1 {
-    font-size: 6vw;
-  }
-  h2 {
-    font-size: 3.5vw;
-  }
-  button, p {
-    font-size: 2.5vw;
-    line-height: 3vw;
-  }
-}
-
-@media (orientation: portrait) and (min-width: 410px) {
-  h1 {
-    font-size: 10vw;
-  }
-  h2 {
-    font-size: 6vw;
-  }
-  button, p {
-    font-size: 4vw;
-    line-height: 5vw;
-  }
-} */
 
 .about {
   grid-area: about;
