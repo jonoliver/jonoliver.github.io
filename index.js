@@ -22,13 +22,14 @@
 
   const titles = [
     "Developer",
+    "Engineer",
+    "Architect",
     "Ninja",
     "Rockstar",
     "Jedi",
     "Wizard",
     "Warlock",
     "Hacker",
-    "Engineer",
     "Astronaut",
   ];
 
