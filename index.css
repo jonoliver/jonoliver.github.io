@@ -149,15 +149,15 @@ button {
   }
 }
 
-.socially-distant-media {
+.social-media {
   grid-area: nav;
   display: grid;
   align-items: center;
   justify-content: space-evenly;
-  grid-template-columns: repeat(5, 20vw);
+  grid-template-columns: repeat(4, 20vw);
 }
 
-.socially-distant-media a {
+.social-media a {
   display: block;
   margin: auto;
   width: 2.2rem;
@@ -165,15 +165,15 @@ button {
 }
 
 @media (min-width: 900px) {
-  .socially-distant-media a {
+  .social-media a {
     width: 4vw;
   }
 }
 
-.socially-distant-media svg {
+.social-media svg {
   fill: #E4F4E5;
 }
 
-.socially-distant-media a:hover svg {
+.social-media a:hover svg {
   fill: #ffd9a5;
 }
